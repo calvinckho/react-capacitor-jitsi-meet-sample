@@ -1,0 +1,7 @@
+{
+  "name": "React-Capacitor-Jitsi-Meet-Sample",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

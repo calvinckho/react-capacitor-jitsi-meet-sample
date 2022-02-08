@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "React-Capacitor-Jitsi-Meet-Sample",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}
