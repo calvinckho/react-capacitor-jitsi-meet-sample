@@ -1,6 +1,6 @@
-# React Capacitor Jitsi Meetx Sample App
+# React Capacitor Jitsi Meet Android Demo
 
-Welcome to the React Capacitor-Jitsi-Meet Sample App.
+This demo project showcase how to run the [Capacitor-Jitsi-Meet plugin]('https://github.com/calvinckho/capacitor-jitsi-meet') on a React Android app. 
 
 ## Setup
 
@@ -17,7 +17,7 @@ $ npm run build
 
 ```
 
-4. Deploy the app to Android Studio
+4. Update the Capacitor settings, then open the project on Android Studio
 
 ```
 
@@ -25,3 +25,5 @@ $ npx cap update
 $ ionic capacitor open android
 
 ```
+
+5. Deploy the app to an Android device
