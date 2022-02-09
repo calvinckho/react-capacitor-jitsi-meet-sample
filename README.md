@@ -1,10 +1,10 @@
-# React Capacitor Jitsi Meet Android Demo
+# React Capacitor Jitsi Meet Sample App
 
-This demo project showcases how to run the [Capacitor-Jitsi-Meet plugin](github.com/calvinckho/capacitor-jitsi-meet) on a React Android app. 
+This sample app runs a Jitsi Video Conference using the [Capacitor Jitsi-Meet plugin](https://github.com/calvinckho/capacitor-jitsi-meet) on a React Android app. 
 
 ## Setup
 
-1. Follow the ['Install the Ionic CLI' section](ionicframework.com/docs/installation/cli).
+1. Follow the ['Install the Ionic CLI' section](https://ionicframework.com/docs/installation/cli).
 
 2. In your IDE, clone the repo https://github.com/calvinckho/react-capacitor-jitsi-meet-sample.git into a local directory on your machine.
 
