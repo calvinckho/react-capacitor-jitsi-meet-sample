@@ -1,6 +1,6 @@
 # React Capacitor Jitsi Meet Android Demo
 
-This demo project showcases how to run the [Capacitor-Jitsi-Meet plugin]('https://github.com/calvinckho/capacitor-jitsi-meet') on a React Android app. 
+This demo project showcases how to run the [Capacitor-Jitsi-Meet plugin](https://github.com/calvinckho/capacitor-jitsi-meet) on a React Android app. 
 
 ## Setup
 
