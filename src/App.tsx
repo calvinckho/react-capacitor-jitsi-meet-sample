@@ -5,6 +5,7 @@ import Menu from './components/Menu';
 import VideoContainer from './components/VideoContainer';
 import LobbyContainer from "./components/LobbyContainer";
 
+
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -21,32 +22,42 @@ import '@ionic/react/css/text-transformation.css';
 import '@ionic/react/css/flex-utils.css';
 import '@ionic/react/css/display.css';
 
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* import '@ionic/react/css/palettes/dark.always.css'; */
+/* import '@ionic/react/css/palettes/dark.class.css'; */
+import '@ionic/react/css/palettes/dark.system.css';
+
 /* Theme variables */
 import './theme/variables.css';
-import {useEffect} from "react";
 
 setupIonicReact();
 
 const App: React.FC = () => {
   return (
-    <IonApp>
-      <IonReactRouter>
-        <IonSplitPane contentId="main">
-          <Menu />
-          <IonRouterOutlet id="main">
-            <Route path="/" exact={true}>
-              <Redirect to="/Lobby" />
-            </Route>
-            <Route path="/Lobby" exact={true}>
-              <LobbyContainer />
-            </Route>
-            <Route path="/Video" exact={true}>
-              <VideoContainer />
-            </Route>
-          </IonRouterOutlet>
-        </IonSplitPane>
-      </IonReactRouter>
-    </IonApp>
+      <IonApp>
+        <IonReactRouter>
+          <IonSplitPane contentId="main">
+            <Menu />
+            <IonRouterOutlet id="main">
+              <Route path="/" exact={true}>
+                <Redirect to="/Lobby" />
+              </Route>
+              <Route path="/Lobby" exact={true}>
+                <LobbyContainer />
+              </Route>
+              <Route path="/Video" exact={true}>
+                <VideoContainer />
+              </Route>
+            </IonRouterOutlet>
+          </IonSplitPane>
+        </IonReactRouter>
+      </IonApp>
   );
 };
 

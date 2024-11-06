@@ -1,6 +1,6 @@
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import { useParams } from 'react-router';
-import VideoContainer from '../components/VideoContainer';
+import ExploreContainer from '../components/ExploreContainer';
 import './Page.css';
 
 const Page: React.FC = () => {
@@ -24,7 +24,7 @@ const Page: React.FC = () => {
             <IonTitle size="large">{name}</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <VideoContainer/>
+        <ExploreContainer name={name} />
       </IonContent>
     </IonPage>
   );

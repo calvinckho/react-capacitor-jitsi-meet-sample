@@ -1,6 +1,5 @@
 {
-	"appId": "jitsi-meet-demo",
-	"appName": "React-Capacitor-Jitsi-Meet-Sample",
-	"webDir": "build",
-	"bundledWebRuntime": false
+	"appId": "jitsidemo.restvo.com",
+	"appName": "jitsi-meet-demo",
+	"webDir": "dist"
 }
