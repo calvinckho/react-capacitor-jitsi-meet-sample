@@ -30,6 +30,7 @@ const VideoContainer = () => {
         }
 
         if (isPlatform('cordova')) { // native device, open jitsi capacitor plugin
+            console.log("starting Jitsi")
             await Jitsi.joinConference({
                 roomName: 'testing-1235524',
                 url: 'https://meet.jit.si',
@@ -44,7 +45,6 @@ const VideoContainer = () => {
                 inviteEnabled: false,
                 callIntegrationEnabled: true
             });
-            window.addEventListener('onConferenceLeft', onJitsiUnloaded);
         } else {
             const _jitsi = new window.JitsiMeetExternalAPI("meet.jit.si", {
                 parentNode: document.getElementById(jitsiContainerId)
@@ -53,18 +53,40 @@ const VideoContainer = () => {
         }
     };
 
+    const onJitsiLoaded = async (params) => {
+        console.log('Jitsi: loaded Jitsi');
+    }
+
     const onJitsiUnloaded = async () => {
+        console.log("Jitsi: unloaded Jitsi")
         if (isPlatform('cordova')) {
             window.removeEventListener('onConferenceLeft', onJitsiUnloaded);
         }
-
         history.push("/Lobby");
+    }
+
+    const onChatMessageReceived = async (data) => {
+        console.log("message", JSON.stringify(data))
+    }
+
+    const onParticipantsInfoRetrieved = async (data) => {
+        console.log("participant info", JSON.stringify(data));
     }
 
     React.useEffect(() => {
         initialiseJitsi();
 
-        return () => jitsi?.dispose?.();
+        window.addEventListener('onConferenceJoined', onJitsiLoaded);
+        window.addEventListener('onConferenceLeft', onJitsiUnloaded);
+        window.addEventListener('onChatMessageReceived', onChatMessageReceived);
+        window.addEventListener("onParticipantsInfoRetrieved", onParticipantsInfoRetrieved);
+        return () => {
+            jitsi?.dispose?.();
+            window.removeEventListener('onConferenceJoined', onJitsiLoaded);
+            window.removeEventListener('onConferenceLeft', onJitsiUnloaded);
+            window.removeEventListener('onChatMessageReceived', onChatMessageReceived);
+            window.removeEventListener("onParticipantsInfoRetrieved", onParticipantsInfoRetrieved);
+        }
     }, []);
 
     if (isPlatform('cordova')) { // native device, open jitsi capacitor plugin
