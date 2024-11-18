@@ -1,0 +1,12 @@
+{
+	"appId": "jitsidemo.restvo.com",
+	"appName": "jitsi-meet-demo",
+	"webDir": "dist",
+	"packageClassList": [
+		"AppPlugin",
+		"HapticsPlugin",
+		"KeyboardPlugin",
+		"StatusBarPlugin",
+		"Jitsi"
+	]
+}
