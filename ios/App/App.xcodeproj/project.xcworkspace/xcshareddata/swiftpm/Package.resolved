@@ -1,0 +1,51 @@
+{
+  "originHash" : "bb387ec165b150dc6329ca8b9d29ba1a13d84b0f64ed4af1d7dff3b7b1d0b182",
+  "pins" : [
+    {
+      "identity" : "capacitor-swift-pm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ionic-team/capacitor-swift-pm.git",
+      "state" : {
+        "revision" : "0e862e6ff13852a710c8a484180ca4d6a2cc9761",
+        "version" : "8.2.0"
+      }
+    },
+    {
+      "identity" : "giphy-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Giphy/giphy-ios-sdk",
+      "state" : {
+        "revision" : "ed91784fe854a8204a9f994282d87f9c18df5fac",
+        "version" : "2.3.1"
+      }
+    },
+    {
+      "identity" : "jitsi-meet-ios-sdk-releases",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jitsi/jitsi-meet-ios-sdk-releases.git",
+      "state" : {
+        "revision" : "57a426b66880737e26b6f2737f0f22d819d6d8f2",
+        "version" : "12.0.0"
+      }
+    },
+    {
+      "identity" : "libwebp-xcode",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/libwebp-Xcode",
+      "state" : {
+        "revision" : "0d60654eeefd5d7d2bef3835804892c40225e8b2",
+        "version" : "1.5.0"
+      }
+    },
+    {
+      "identity" : "webrtc",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jitsi/webrtc",
+      "state" : {
+        "revision" : "3a659cecd97387a0cf079be34f82f3bb24a03e13",
+        "version" : "124.0.2"
+      }
+    }
+  ],
+  "version" : 3
+}
