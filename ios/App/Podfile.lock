@@ -1,35 +1,35 @@
 PODS:
-  - Capacitor (7.0.1):
+  - Capacitor (8.2.0):
     - CapacitorCordova
-  - CapacitorApp (7.0.0):
+  - CapacitorApp (8.0.1):
     - Capacitor
-  - CapacitorCordova (7.0.1)
-  - CapacitorHaptics (7.0.0):
+  - CapacitorCordova (8.2.0)
+  - CapacitorHaptics (8.0.1):
     - Capacitor
-  - CapacitorJitsiMeet (6.3.0):
+  - CapacitorJitsiMeet (8.0.0):
     - Capacitor
-    - JitsiMeetSDK (= 10.3.0)
-  - CapacitorKeyboard (7.0.0):
+    - JitsiMeetSDK (= 12.0.0)
+  - CapacitorKeyboard (8.0.1):
     - Capacitor
-  - CapacitorStatusBar (7.0.0):
+  - CapacitorStatusBar (8.0.1):
     - Capacitor
   - Giphy (2.2.12):
     - libwebp
-  - JitsiMeetSDK (10.3.0):
+  - JitsiMeetSDK (12.0.0):
     - Giphy (= 2.2.12)
     - JitsiWebRTC (~> 124.0)
   - JitsiWebRTC (124.0.2)
-  - libwebp (1.3.2):
-    - libwebp/demux (= 1.3.2)
-    - libwebp/mux (= 1.3.2)
-    - libwebp/sharpyuv (= 1.3.2)
-    - libwebp/webp (= 1.3.2)
-  - libwebp/demux (1.3.2):
+  - libwebp (1.5.0):
+    - libwebp/demux (= 1.5.0)
+    - libwebp/mux (= 1.5.0)
+    - libwebp/sharpyuv (= 1.5.0)
+    - libwebp/webp (= 1.5.0)
+  - libwebp/demux (1.5.0):
     - libwebp/webp
-  - libwebp/mux (1.3.2):
+  - libwebp/mux (1.5.0):
     - libwebp/demux
-  - libwebp/sharpyuv (1.3.2)
-  - libwebp/webp (1.3.2):
+  - libwebp/sharpyuv (1.5.0)
+  - libwebp/webp (1.5.0):
     - libwebp/sharpyuv
 
 DEPENDENCIES:
@@ -37,7 +37,7 @@ DEPENDENCIES:
   - "CapacitorApp (from `../../node_modules/@capacitor/app`)"
   - "CapacitorCordova (from `../../node_modules/@capacitor/ios`)"
   - "CapacitorHaptics (from `../../node_modules/@capacitor/haptics`)"
-  - CapacitorJitsiMeet (from `../../node_modules/capacitor-jitsi-meet`)
+  - CapacitorJitsiMeet (from `../../../capacitor-jitsi-meet`)
   - "CapacitorKeyboard (from `../../node_modules/@capacitor/keyboard`)"
   - "CapacitorStatusBar (from `../../node_modules/@capacitor/status-bar`)"
 
@@ -58,25 +58,25 @@ EXTERNAL SOURCES:
   CapacitorHaptics:
     :path: "../../node_modules/@capacitor/haptics"
   CapacitorJitsiMeet:
-    :path: "../../node_modules/capacitor-jitsi-meet"
+    :path: "../../../capacitor-jitsi-meet"
   CapacitorKeyboard:
     :path: "../../node_modules/@capacitor/keyboard"
   CapacitorStatusBar:
     :path: "../../node_modules/@capacitor/status-bar"
 
 SPEC CHECKSUMS:
-  Capacitor: 23fff43571a4d1e3ee7d67b5a3588c6e757c2913
-  CapacitorApp: 45cb7cbef4aa380b9236fd6980033eb5cde6fcd2
-  CapacitorCordova: 63d476958d5022d76f197031e8b7ea3519988c64
-  CapacitorHaptics: 1fba3e460e7614349c6d5f868b1fccdc5c87b66d
-  CapacitorJitsiMeet: ae2c6e2825dc1f83fb213ee66875e8b1f7fae7b3
-  CapacitorKeyboard: 2c26c6fccde35023c579fc37d4cae6326d5e6343
-  CapacitorStatusBar: 438e90beeeefa8276b24e6c5991cb02dd13e51bf
+  Capacitor: c04568d0798e8c9a481d70e8d3df1f7fe1966549
+  CapacitorApp: fcd990168c3249d2c5a7ae94920a031d05789e73
+  CapacitorCordova: a9ac88d84a1f5280f33b349fe50fce1902683ac0
+  CapacitorHaptics: af524744f86b761c13306b4c88a0de6cd28e3062
+  CapacitorJitsiMeet: 01ea02e9e3730de5bba4e109dbba60fbf401c750
+  CapacitorKeyboard: cbbe3df7194442bfd18ed4ac1d9ed0294ce579a9
+  CapacitorStatusBar: 7fc9bb6737a29524034dfdc51ae1f1880d972b4d
   Giphy: 83628960ed04e1c3428ff1b4fb2b027f65e82f50
-  JitsiMeetSDK: 439fc3e45870c5ebf7b371fa038719bf70ef76d9
+  JitsiMeetSDK: 2e475ff0be5a46bb239ed12ab24f2bbda66f0445
   JitsiWebRTC: b47805ab5668be38e7ee60e2258f49badfe8e1d0
-  libwebp: 1786c9f4ff8a279e4dac1e8f385004d5fc253009
+  libwebp: 02b23773aedb6ff1fd38cec7a77b81414c6842a8
 
-PODFILE CHECKSUM: e39950414f3a1c76dfae49f5cf2878be88ca8a1c
+PODFILE CHECKSUM: 2d81082707f8098bdd23c71a8b0d4a19b8e2e905
 
 COCOAPODS: 1.16.2
