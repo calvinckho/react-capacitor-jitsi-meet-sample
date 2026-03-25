@@ -37,7 +37,7 @@ DEPENDENCIES:
   - "CapacitorApp (from `../../node_modules/@capacitor/app`)"
   - "CapacitorCordova (from `../../node_modules/@capacitor/ios`)"
   - "CapacitorHaptics (from `../../node_modules/@capacitor/haptics`)"
-  - CapacitorJitsiMeet (from `../../../capacitor-jitsi-meet`)
+  - CapacitorJitsiMeet (from `../../node_modules/capacitor-jitsi-meet`)
   - "CapacitorKeyboard (from `../../node_modules/@capacitor/keyboard`)"
   - "CapacitorStatusBar (from `../../node_modules/@capacitor/status-bar`)"
 
@@ -58,7 +58,7 @@ EXTERNAL SOURCES:
   CapacitorHaptics:
     :path: "../../node_modules/@capacitor/haptics"
   CapacitorJitsiMeet:
-    :path: "../../../capacitor-jitsi-meet"
+    :path: "../../node_modules/capacitor-jitsi-meet"
   CapacitorKeyboard:
     :path: "../../node_modules/@capacitor/keyboard"
   CapacitorStatusBar:
@@ -77,6 +77,6 @@ SPEC CHECKSUMS:
   JitsiWebRTC: b47805ab5668be38e7ee60e2258f49badfe8e1d0
   libwebp: 02b23773aedb6ff1fd38cec7a77b81414c6842a8
 
-PODFILE CHECKSUM: 2d81082707f8098bdd23c71a8b0d4a19b8e2e905
+PODFILE CHECKSUM: e3db54c03db07e0d00774fd4315df8e15486e206
 
 COCOAPODS: 1.16.2
