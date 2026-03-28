@@ -23,7 +23,7 @@ import {
   paperPlaneOutline,
   paperPlaneSharp,
   trashOutline,
-  trashSharp,
+  trashSharp, tvOutline, tvSharp,
   warningOutline,
   warningSharp
 } from 'ionicons/icons';
@@ -42,12 +42,18 @@ const appPages: AppPage[] = [
     url: '/Lobby',
     iosIcon: homeOutline,
     mdIcon: homeSharp
-  },
+  },/*
   {
     title: 'Video Chat',
     url: '/Video',
     iosIcon: callOutline,
     mdIcon: callSharp
+  },*/
+  {
+    title: 'UI Test',
+    url: '/Design',
+    iosIcon: tvOutline,
+    mdIcon: tvSharp
   }
 ];
 

@@ -4,6 +4,7 @@ import { Redirect, Route } from 'react-router-dom';
 import Menu from './components/Menu';
 import VideoContainer from './components/VideoContainer';
 import LobbyContainer from "./components/LobbyContainer";
+import DesignSystemContainer from "./components/DesignSystemContainer";
 
 
 /* Core CSS required for Ionic components to work properly */
@@ -53,6 +54,9 @@ const App: React.FC = () => {
               </Route>
               <Route path="/Video" exact={true}>
                 <VideoContainer />
+              </Route>
+              <Route path="/Design" exact={true}>
+                <DesignSystemContainer />
               </Route>
             </IonRouterOutlet>
           </IonSplitPane>

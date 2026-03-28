@@ -1,5 +1,5 @@
 import React from "react";
-import { IonButton, IonGrid, IonRow, IonList, IonLabel, isPlatform } from '@ionic/react';
+import {IonButton, IonGrid, IonRow, IonList, IonLabel, isPlatform, IonPage} from '@ionic/react';
 import {Jitsi} from "capacitor-jitsi-meet";
 import { useHistory } from "react-router-dom";
 
@@ -95,7 +95,7 @@ const VideoContainer = () => {
     }, []);
 
     if (isPlatform('cordova')) { // native device, open jitsi capacitor plugin
-        return <div className="full-height">
+        return <IonPage className="full-height">
             <IonGrid className="full-height">
                 <IonRow className="full-height ion-justify-content-center ion-align-items-center">
                     <IonList class="ion-padding">
@@ -111,7 +111,7 @@ const VideoContainer = () => {
                     </IonList>
                 </IonRow>
             </IonGrid>
-        </div>
+        </IonPage>
     } else {
         return <div id={jitsiContainerId} style={{ height: 720, width: "100%" }} />;
     }
