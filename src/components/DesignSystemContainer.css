@@ -25,7 +25,6 @@
 
 .message-container {
     margin-left: 16px;
-//width: 80%;
 }
 
 .message-detail {
@@ -41,11 +40,9 @@
 }
 
 .completed_percentage {
-//width: 40px;
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
-    //color: var(--ion-color-button1);
 }
 
 .content-container {
@@ -80,7 +77,6 @@
     padding: 10px 5px;
     background-color: transparent;
 
-//margin-top: 20px;
     .swiper-container {
         height: 100%;
     }
@@ -117,19 +113,15 @@
 .program-photo-container {
     height: 100px;
     overflow: hidden;
-//border-radius: 50%;
-//margin: 5% auto;
 }
 
 .program-photo {
     object-fit: cover;
     cursor: pointer;
-//opacity: 50%;
     height: 100%;
     width: 100%;
     margin: auto;
-    display: block;
-//max-height: 200px;
+    display: block
 }
 
 .program-name {
@@ -165,7 +157,7 @@
 
 .progress {
     text-align: center;
-    width: 20%; // 32%
+    width: 20%;
 }
 
 .last-date {
