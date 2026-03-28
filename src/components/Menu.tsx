@@ -42,13 +42,13 @@ const appPages: AppPage[] = [
     url: '/Lobby',
     iosIcon: homeOutline,
     mdIcon: homeSharp
-  },/*
+  },
   {
-    title: 'Video Chat',
+    title: 'Start Call',
     url: '/Video',
     iosIcon: callOutline,
     mdIcon: callSharp
-  },*/
+  },
   {
     title: 'UI Test',
     url: '/Design',
